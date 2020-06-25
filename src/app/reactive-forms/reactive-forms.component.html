@@ -1,0 +1,12 @@
+<h1>Reactive Forms</h1>
+
+<label>
+  What is your name?:
+  <input type="text" [formControl]="name">
+</label>
+
+<h3>The history of changes typed</h3>
+<ul>
+    <li *ngFor="let item of changesHistory" >{{item}}</li>
+</ul>
+

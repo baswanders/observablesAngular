@@ -1,0 +1,21 @@
+<h1>HTTP Request</h1>
+<button (click)="getToDos()">Get todo's </button>
+
+<div class="block note"><p>
+    Pay attention that in this example we don't subscribe or unsubscribe in the code.
+    In the HTML we use the 'async pipe' to let Angular do the work for us.
+    </p>
+    <code>
+        {{codeExampleText}}
+    </code>
+    <p>
+    This is the prefered way to use Observables in forms. If possible supply the observable
+    in the html template with the async pipe. An other benefit of the async pipe is, if there is no data,
+    there will be no undefined error in the html template.
+</p></div>
+
+<div class="block">
+    <div *ngFor="let todo of todos$ | async" class="todo">
+        <span>{{todo.id}}</span> <span>{{todo.title}}</span> <span>{{todo.completed}}</span>
+    </div>
+</div>

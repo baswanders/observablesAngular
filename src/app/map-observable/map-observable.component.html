@@ -1,0 +1,13 @@
+<h1>MAP. Convert contents of an Observable stream</h1>
+<div class="block note">
+    <p>In this example we receive data from a http request as an observable.
+        We use the map function to change the data inside this observable and return the new observable
+    </p>
+</div>
+<button (click)="getToDos()">Get todo's </button>
+
+<div class="block">
+    <div *ngFor="let todo of todosSummary$ | async" class="todo">
+        <span>{{todo}}</span>
+    </div>
+</div>
