@@ -1,6 +1,8 @@
 # Observables and RxJS in Angular
 
-Examples of using Observables and RxJS in Angular
+Examples of using Observables and RxJS in Angular.
+
+See running demo in: https://stackblitz.com/github/baswanders/observablesAngular
 
 ## Development server
 
