@@ -1,0 +1,25 @@
+<h1>CombineLatest</h1>
+
+<div class="block note"><p>
+    Here we combine 2 observable streams.<br>
+    We have two observables, one for getting todos, the other for getting the users. <br>
+    We wait until we got data from both observables and then do something with the data.</p>
+    <p>Whenever possible use the async version. Try not to subscribe in the component, use the returned observable directly in the html template with | async</p>
+</div>
+
+<div class="block flex-container">
+    <div class="sync flex-1">
+        <h3>Sync version</h3>
+        <div *ngFor="let todo of todosVM" class="todo">
+            <span>{{todo.username}}</span> - <span>{{todo.title}}</span> - <span>{{todo.completed}}</span>
+        </div>
+    </div>
+    <div class="async flex-1">
+        <h3>Async version</h3>
+        <div *ngFor="let todo of todosVM$ | async" class="todo">
+            <span>{{todo.username}}</span> - <span>{{todo.title}}</span> - <span>{{todo.completed}}</span>
+        </div>
+    </div>
+
+</div>
+

@@ -8,6 +8,7 @@ import { MapObservableComponent } from './map-observable/map-observable.componen
 import { TakeoneComponent } from './takeone/takeone.component';
 import { TakeWhileComponent } from './take-while/take-while.component';
 import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
+import { CombineLatestComponent } from './combine-latest/combine-latest.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'take-one', component: TakeoneComponent },
   { path: 'memory-leak', component: MemoryLeakComponent },
   { path: 'take-while', component: TakeWhileComponent },
+  { path: 'combine-latest', component: CombineLatestComponent },
 ];
 
 @NgModule({

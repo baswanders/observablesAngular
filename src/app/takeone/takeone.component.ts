@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Todo } from '../http-request/todo';
+import { Todo } from '../models/todo';
 import { take } from 'rxjs/operators';
 
 @Component({

@@ -15,6 +15,8 @@ import { MapObservableComponent } from './map-observable/map-observable.componen
 import { TakeoneComponent } from './takeone/takeone.component';
 import { TakeWhileComponent } from './take-while/take-while.component';
 import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
+import { OtherHistoryComponent } from './reactive-forms/other-history/other-history.component';
+import { CombineLatestComponent } from './combine-latest/combine-latest.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
     TakeoneComponent,
     TakeWhileComponent,
     MemoryLeakComponent,
+    OtherHistoryComponent,
+    CombineLatestComponent,
   ],
   imports: [
     BrowserModule,

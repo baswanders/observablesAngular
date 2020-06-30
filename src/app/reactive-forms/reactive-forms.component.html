@@ -5,8 +5,16 @@
   <input type="text" [formControl]="name">
 </label>
 
+<div class="flex-container">
+  <div class="flex-1">
 <h3>The history of changes typed</h3>
 <ul>
     <li *ngFor="let item of changesHistory" >{{item}}</li>
 </ul>
+  </div>
+  <div class="flex-1">
+    <app-other-history [changesHistory]="changesHistory"></app-other-history>
+  </div>
+</div>
+
 

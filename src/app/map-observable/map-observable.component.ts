@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Todo } from './todo';
+import { Todo } from '../models/todo';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { tap, map, filter } from 'rxjs/operators';
