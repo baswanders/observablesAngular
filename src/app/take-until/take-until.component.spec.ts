@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TakeWhileComponent } from './take-while.component';
+import { TakeUntilComponent } from './take-until.component';
 
-describe('TakeWhileComponent', () => {
-  let component: TakeWhileComponent;
-  let fixture: ComponentFixture<TakeWhileComponent>;
+describe('TakeUntilComponent', () => {
+  let component: TakeUntilComponent;
+  let fixture: ComponentFixture<TakeUntilComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TakeWhileComponent ]
+      declarations: [ TakeUntilComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TakeWhileComponent);
+    fixture = TestBed.createComponent(TakeUntilComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

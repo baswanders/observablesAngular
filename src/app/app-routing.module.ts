@@ -6,7 +6,7 @@ import { ReactiveFormsUnsubscribeComponent } from './reactive-forms-unsubscribe/
 import { HttpRequestComponent } from './http-request/http-request.component';
 import { MapObservableComponent } from './map-observable/map-observable.component';
 import { TakeoneComponent } from './takeone/takeone.component';
-import { TakeWhileComponent } from './take-while/take-while.component';
+import { TakeUntilComponent } from './take-until/take-until.component';
 import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
 import { CombineLatestComponent } from './combine-latest/combine-latest.component';
 
@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'map', component: MapObservableComponent },
   { path: 'take-one', component: TakeoneComponent },
   { path: 'memory-leak', component: MemoryLeakComponent },
-  { path: 'take-while', component: TakeWhileComponent },
+  { path: 'take-until', component: TakeUntilComponent },
   { path: 'combine-latest', component: CombineLatestComponent },
 ];
 

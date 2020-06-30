@@ -3,11 +3,11 @@ import { interval, fromEvent, Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-take-while',
-  templateUrl: './take-while.component.html',
-  styleUrls: ['./take-while.component.scss']
+  selector: 'app-take-until',
+  templateUrl: './take-until.component.html',
+  styleUrls: ['./take-until.component.scss']
 })
-export class TakeWhileComponent implements OnInit, OnDestroy {
+export class TakeUntilComponent implements OnInit, OnDestroy {
   secondsCounter$ = interval(1000);
   mouseMove$ = fromEvent(document, 'mousemove');
   mouseMove: MouseEvent;
