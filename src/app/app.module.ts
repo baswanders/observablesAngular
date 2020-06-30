@@ -12,6 +12,9 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsUnsubscribeComponent } from './reactive-forms-unsubscribe/reactive-forms-unsubscribe.component';
 import { HttpRequestComponent } from './http-request/http-request.component';
 import { MapObservableComponent } from './map-observable/map-observable.component';
+import { TakeoneComponent } from './takeone/takeone.component';
+import { TakeWhileComponent } from './take-while/take-while.component';
+import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { MapObservableComponent } from './map-observable/map-observable.componen
     ReactiveFormsUnsubscribeComponent,
     HttpRequestComponent,
     MapObservableComponent,
+    TakeoneComponent,
+    TakeWhileComponent,
+    MemoryLeakComponent,
   ],
   imports: [
     BrowserModule,

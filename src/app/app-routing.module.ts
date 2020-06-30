@@ -5,6 +5,9 @@ import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.componen
 import { ReactiveFormsUnsubscribeComponent } from './reactive-forms-unsubscribe/reactive-forms-unsubscribe.component';
 import { HttpRequestComponent } from './http-request/http-request.component';
 import { MapObservableComponent } from './map-observable/map-observable.component';
+import { TakeoneComponent } from './takeone/takeone.component';
+import { TakeWhileComponent } from './take-while/take-while.component';
+import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
 
 
 const routes: Routes = [
@@ -13,6 +16,9 @@ const routes: Routes = [
   { path: 'reactive-forms-unsubscribe', component: ReactiveFormsUnsubscribeComponent },
   { path: 'http-request', component: HttpRequestComponent },
   { path: 'map', component: MapObservableComponent },
+  { path: 'take-one', component: TakeoneComponent },
+  { path: 'memory-leak', component: MemoryLeakComponent },
+  { path: 'take-while', component: TakeWhileComponent },
 ];
 
 @NgModule({

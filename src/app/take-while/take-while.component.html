@@ -1,0 +1,20 @@
+<h1>Take while - for easy unsubscribe</h1>
+
+
+<div class="block note">
+    <p>
+        The code of this example is based of the "memory leak" example. <br>
+        We added an other subscribtion, to show the benefits of unsubscribing via TakeWhile. <br>
+        Like in the "memory leak" example, open your console log. Observe that the counter is running. <br>
+        Move back to the home page and you see the log stops printing to the console. <br>
+        Our subscribtion is correctly unsubscribed!
+    </p>
+</div>
+
+<div class="block">
+    <div>
+        <p>Counter async: {{secondsCounter$ | async}}</p>
+        <p>Counter sync: {{secondsCounter}}</p>
+        <p *ngIf="mouseMove" >Mouse move data: {{ mouseMove.screenX}}</p>
+    </div>
+</div>

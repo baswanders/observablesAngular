@@ -1,0 +1,17 @@
+<h1>Take 1</h1>
+
+
+<div class="block note"><p>
+    In this example we use the take(1) pipe operator, this makes sure we get the first data that comes from the observable.
+    After that the subscribtion will be unsubscribed.
+    </p>
+
+    <p>
+    Is subscribtion closed? : {{todoSubscription.closed}}
+</p></div>
+
+<div class="block">
+    <div *ngFor="let todo of todos" class="todo">
+        <span>{{todo.id}}</span> <span>{{todo.title}}</span> <span>{{todo.completed}}</span>
+    </div>
+</div>

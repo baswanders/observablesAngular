@@ -1,0 +1,25 @@
+<h1>Memory leak - no unsubscribe</h1>
+
+<div class="block note">
+    <p>
+    In this example there are two subscribtions.
+    </p>
+    <p>
+    Pay attention to the counter, open the console log and see the counter there going in sync with the counter on the html.
+    <p>Keep the console log open and go back to the home page.
+    </p>
+    <p>
+        Observe that the counter in the console log is still running!! <br> 
+        Next return to this page, the html counter looks fine, but in the console you see now TWO different values.
+    </p>
+    <p>
+        The reason for this is because we did not unsubscribe.
+    </p>
+</div>
+
+<div class="block">
+    <div>
+        <p>Counter async: {{secondsCounter$ | async}}</p>
+        <p>Counter sync: {{secondsCounter}}</p>
+    </div>
+</div>
